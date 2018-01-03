@@ -1,6 +1,9 @@
 var webpack = require('webpack');  
 module.exports = {  
   entry: './app.ts',
+  devServer: {
+    disableHostCheck: true
+  },
   output: {
     filename: 'dist/script.js'
   },
